@@ -1,25 +1,22 @@
 /****************** 폰트설정 ******************/
 @font-face {
-    font-family: 'suitMedium';
-    src : url('../font/suit/SUIT-Medium.ttf');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'SUITmedium';
+	font-weight: 500;
+	src: url('../font/suit/SUIT-Medium.ttf');
 }
 
 @font-face {
-    font-family: 'suitBold';
-    src : url('../font/suit/SUIT-Bold.ttf');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'SUITbold';
+	font-weight: 700;
+	src: url('../font/suit/SUIT-Bold.ttf');
 }
 
 .lib-font-bold{
-    font-family: 'suitBold';
+    font-family: 'SUITbold';
 }
 .lib-font-medium{
-    font-family: 'suitMedium';
+    font-family: 'SUITmedium';
 }
-
 
 *{
     transition: background-color .2s, color .05s, box-shadow .2s;
@@ -59,7 +56,6 @@
     }
 
     #color-light{ background-image: url("https://ui.koderpark.dev/img/icon/light.png"); }
-    #color-normal{ background-image: url("https://ui.koderpark.dev/img/icon/normal.png"); }
     #color-dark{ background-image: url("https://ui.koderpark.dev/img/icon/dark.png"); }
 }
 
@@ -81,8 +77,8 @@ body{
 .r3{ border-radius: 3rem; }
 .r4{ border-radius: 4rem; }
 
-.h0{ font-size: 48px; display: inline-block; height: 48px; }
-.h7{ font-size: 12px; display: inline-block; height: 12px; }
+.h0{ font-size: 64px; line-height: 64px; padding: 16px 32px;}
+.h7{ font-size: 12px; line-height: 12px; }
 
 .dragfalse{ -ms-user-select: none; -moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none; user-select: none; }
 
