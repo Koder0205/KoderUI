@@ -1,0 +1,6 @@
+@each $link in kakao, twitter, email, discord, github{
+    .contact-#{$link}{
+        background-image: url('../img/contact/#{$link}.png');
+        background-size: cover;
+    }
+}

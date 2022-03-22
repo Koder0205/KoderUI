@@ -59,7 +59,7 @@
     #color-dark{ background-image: url("https://ui.koderpark.dev/img/icon/dark.png"); }
 }
 
-a{ text-decoration: none !important; }
+a{ text-decoration: none !important;}
 
 p {margin: 0;}
 ul{margin: 0;}
@@ -69,6 +69,13 @@ body{
     margin: 0;
     padding: 0;
     border: 0;
+}
+
+
+ul{
+}
+.ul-square li{
+    list-style: square;
 }
 
 .r0{ border-radius: .5rem; }
