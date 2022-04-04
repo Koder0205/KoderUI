@@ -1,6 +1,13 @@
-@each $link in kakao, twitter, email, discord, github{
+@each $link in kakao, twitter, email, discord, github, tistory, toss{
     .contact-#{$link}{
         background-image: url('../img/contact/#{$link}.png');
         background-size: cover;
+    }
+}
+
+@each $link, $ext in (solvedac, svg), (boj, svg), (codeforces, svg), (codeup, jfif){
+    .ps-#{$link}{
+        background-image: url('../img/ps/#{$link}.#{$ext}');
+        background-size: cover
     }
 }

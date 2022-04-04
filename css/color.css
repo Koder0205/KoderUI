@@ -1,8 +1,8 @@
 /****************** 색상 변수 선언 ******************/
 :root{
-    --bg1 : rgb(250,250,254);
-    --bg2 : rgb(240,240,244);
-    --bgrev : rgb(22,22,30);
+    --bg1 : #fafafe;
+    --bg2 : #f0f0f4;
+    --bgrev : #2c2c32;
 
     --shadow : rgba(108,108,128,0.05);
 
@@ -10,10 +10,11 @@
     --textrev : white;
 }
 
+
 :root[color='light']{
-    --bg1 : rgb(250,250,254);
-    --bg2 : rgb(240,240,244);
-    --bgrev : rgb(22,22,30);
+    --bg1 : #fafafe;
+    --bg2 : #f0f0f4;
+    --bgrev : #2c2c32;
 
     --shadow : rgba(108,108,128,0.05);
 
@@ -22,9 +23,9 @@
 }
 
 :root[color='dark']{
-    --bg1 : rgb(44,44,50);
-    --bg2 : rgb(22,22,30);
-    --bgrev : rgb(250,250,254);
+    --bg1 : #2c2c32;
+    --bg2 : #16161e;
+    --bgrev : #fafafe;
 
     --shadow : rgba(16,16,21,0.3);
 
@@ -34,9 +35,9 @@
 
 @media (prefers-color-scheme: light){
     :root{
-        --bg1 : rgb(250,250,254);
-        --bg2 : rgb(240,240,244);
-        --bgrev : rgb(22,22,30);
+        --bg1 : #fafafe;
+        --bg2 : #f0f0f4;
+        --bgrev : #2c2c32;
 
         --shadow : rgba(108,108,128,0.05);
 
@@ -47,9 +48,9 @@
 
 @media (prefers-color-scheme: dark){
     :root{
-        --bg1 : rgb(44,44,50);
-        --bg2 : rgb(22,22,30);
-        --bgrev : rgb(250,250,254);
+        --bg1 : #2c2c32;
+        --bg2 : #16161e;
+        --bgrev : #fafafe;
 
         --shadow : rgba(16,16,21,0.3);
 
@@ -58,6 +59,9 @@
     }
 }
 
+*{
+    accent-color: var(--textrev);
+}
 
 h1,
 h2{
@@ -73,9 +77,9 @@ hr{
 }
 
 /****************** 배경화면 ******************/
-.lib-bg1{ background-color: var(--bg1); }
+.lib-bg1{ background-color: var(--bg1); color: var(--text); }
 .lib-bg2{ background-color: var(--bg2); color: var(--text); }
-.lib-bg-rev{ background-color: var(--bgrev); color: var(--textrev) }
+.lib-bg-rev{ background-color: var(--bgrev); color: var(--textrev); }
 
 .lib-shadow{
     box-shadow: 
